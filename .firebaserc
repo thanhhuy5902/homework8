@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "runway-e55d4": {
+      "hosting": {
+        "runway": [
+          "runway-e55d4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "runway-e55d4"
+  }
+}
