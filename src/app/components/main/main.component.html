@@ -2,9 +2,10 @@
   <div class="left">
     <div class="top">
       <div class="Runway_club">
-        <h2>Runway Club is a community of amazing members</h2>
+        <h2>Keep The Blue Flag Flying High</h2>
         <p>
-          Chào mừng đến với Runway Club - Cộng đồng yêu lập trình và công nghệ
+          Chào mừng bạn đến với gia đình Chelsea club - nơi đầy cảm xúc và niềm
+          đam mê bóng đá, hãy cùng chung tay "Keep The Blue Flag Flying High"!
         </p>
         <div class="account">
           <div class="create-box">
@@ -28,10 +29,12 @@
       </div>
       <div class="icon">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+          src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
           style="height: 25px; width: 25px"
         />
-        <p class="name_icon">Discord</p>
+        <a href="https://www.facebook.com/ChelseaFC" class="name_icon"
+          >Facebook</a
+        >
       </div>
 
       <div class="icon">
@@ -113,14 +116,37 @@
             ></path>
           </g>
         </svg>
-        <p class="name_icon">Runway Video</p>
+        <a
+          href="https://www.youtube.com/channel/UCU2PacFf99vhb3hNiYDmxww"
+          class="name_icon"
+          >Youtube</a
+        >
       </div>
+
+      <div class="icon">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          style="height: 25px; width: 25px"
+        />
+        <a href="https://www.instagram.com/chelseafc/" class="name_icon"
+          >Instagram</a
+        >
+      </div>
+
       <div class="icon">
         <img
           src=" https://cdn-icons-png.flaticon.com/512/3143/3143636.png"
           style="height: 25px; width: 25px"
         />
-        <p class="name_icon">Sự kiện</p>
+        <p class="name_icon">Lịch thi đấu</p>
+      </div>
+
+      <div class="icon">
+        <img
+          src=" https://cdn-icons-png.flaticon.com/512/4955/4955419.png "
+          style="height: 25px; width: 25px"
+        />
+        <p class="name_icon">About group</p>
       </div>
 
       <div class="icon">
@@ -132,7 +158,7 @@
       </div>
     </div>
     <hr />
-    <div class="bottom_of_left">
+    <!-- <div class="bottom_of_left">
       <h2>orther</h2>
       <div class="icon">
         <img
@@ -146,31 +172,23 @@
           src=" https://cdn-icons-png.flaticon.com/512/742/742785.png "
           style="height: 25px; width: 25px"
         />
-        <p class="name_icon">Chủ đề</p>
-      </div>
-      <div class="icon">
-        <img
-          src=" https://cdn-icons-png.flaticon.com/512/4955/4955419.png "
-          style="height: 25px; width: 25px"
-        />
-        <p class="name_icon">Chủ đề</p>
+        <p class="name_icon">About group</p>
       </div>
 
       <div class="connect">
         <img
           class="facebook"
-          src="	https://cdn-icons-png.flaticon.com/512/1384/1384037.png"
+          src="	https://cdn-icons-png.flaticon.com/512/733/733547.png"
           style="height: 25px; width: 25px"
         />
 
         <img
           class="github"
-          src="	  https://cdn-icons-png.flaticon.com/512/2111/2111425.png"
+          src="	https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
           style="height: 25px; width: 25px"
         />
       </div>
-      <h2>Popular Tags</h2>
-    </div>
+    </div> -->
   </div>
 
   <div class="center">
@@ -210,24 +228,32 @@
               <p class="hag_tag1">#{{ tag }}</p>
             </div>
           </div>
-          <div></div>
-          <div class="like" *ngIf="data.public_reactions_count">
-            <div class="like_of_like">
-              <img
-                class="like_img"
-                src="   https://cdn-icons-png.flaticon.com/512/1077/1077035.png "
-                style="height: 25px; width: 25px"
-              />
-              <p>{{ data.public_reactions_count }} reations</p>
+          <div class="border_reactions">
+            <div class="like" *ngIf="data.public_reactions_count">
+              <div class="like_of_like">
+                <img
+                  class="like_img"
+                  src="   https://cdn-icons-png.flaticon.com/512/1077/1077035.png "
+                  style="height: 25px; width: 25px"
+                />
+                <p>{{ data.public_reactions_count }} reactions</p>
+              </div>
             </div>
-
-            <div class="like_of_like">
+            <div class="like_of_like" *ngIf="data.comments_count">
               <img
                 class="like_img"
                 src="   https://cdn-icons-png.flaticon.com/512/3272/3272392.png "
                 style="height: 25px; width: 25px"
               />
               <p>{{ data.comments_count }}comments</p>
+            </div>
+            <div class="like_of_like" *ngIf="data.comments_count == 0">
+              <img
+                class="like_img"
+                src="   https://cdn-icons-png.flaticon.com/512/3272/3272392.png "
+                style="height: 25px; width: 25px"
+              />
+              <p>Add comments</p>
             </div>
             <div class="like_of_like">
               <img
@@ -242,7 +268,6 @@
       </div>
     </div>
   </div>
-
   <div class="right">
     <div class="descriptions">
       <div class="logo_chelsea">
@@ -254,14 +279,47 @@
 
       <div class="history">
         <div class="list">
-          <h2>Full name</h2>
+          <h2>Full name:</h2>
           <p>Chelsea Football Club</p>
         </div>
+        <div class="list">
+          <h2>Nick name:</h2>
+          <p>The Blues, The Pensioners</p>
+        </div>
+        <div class="list">
+          <h2>Founded:</h2>
+          <p>10 March 1905</p>
+        </div>
 
-        <!-- <h2>Nickname(s)</h2>
-        <p>The Blues, The Pensioners</p>
-        <h2>Found</h2> -->
+        <div class="list">
+          <h2>Ground:</h2>
+          <p>Stamford Bridge</p>
+        </div>
+
+        <div class="list">
+          <h2>Chairman:</h2>
+          <p>Todd Boehly</p>
+        </div>
+
+        <div class="list">
+          <h2>Head coach:</h2>
+          <p>Frank Lampard</p>
+        </div>
+
+        <div class="list">
+          <h2>League:</h2>
+          <p>Premier League</p>
+        </div>
       </div>
+    </div>
+    <div class="cloth">
+      <img src="../../../assets/cloth.png" style="height: 100%; width: 100%" />
+    </div>
+    <div class="flag">
+      <img
+        src="https://i.pinimg.com/564x/b0/68/ba/b068bacd1a5420ea4fdb2325b0c70e1c.jpg"
+        style="width: 100%"
+      />
     </div>
   </div>
 </div>

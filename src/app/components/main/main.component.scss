@@ -5,6 +5,8 @@
   width: 100%;
   padding-top: 80px;
   background-color: rgb(240, 240, 240);
+
+  
 }
 .left {
   display: grid;
@@ -132,6 +134,8 @@
     margin: 10px 10px;
     font-size: 16px;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
   }
 }
 .icon:hover {
@@ -141,7 +145,10 @@
 
   .name_icon {
     border-bottom: 1px solid black;
+    
+    color: black;
   }
+  
 }
 
 .center {
@@ -247,52 +254,69 @@
 
             .hag_tag1{
                 margin: 0 10px;
-                border: 1px solid rgb(223, 222, 222);
+                
             }
         }
     }
-
+    .border_reactions{
+        display: flex;
+        flex-direction: row;
         .like{
             display: flex;
             flex-direction: row;
-            .like_of_like{
-                display: flex;
-                flex-direction: row;
-                margin: 10px;
 
-                p{
-                    margin: 0 5px;
-                }
+           
+        }
+        .like_of_like{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+
+            p{
+                margin: 0 5px;
             }
         }
-    }
+    }}
   }
 }
 .card_status{
     margin-top: 10px;
 }
 
+
 .right {
-  width: 25%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
-  .descriptions{
-    border: 1px solid black;
-    .lo
-
-    .history{
-        display: flex;
-        flex-direction: column;
-        .list{
-            display: flex;
-            flex-direction: row;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .descriptions{
+      .logo_chelsea{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
         }
+    //  
+      align-items: center;
+      
+  
+      .history{
+        
+          .list{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+  
+              p{
+                  margin: 8px 10px;
+                  font-size: 15px;
+              }
+          }
+      }
+  
     }
-
   }
-}
